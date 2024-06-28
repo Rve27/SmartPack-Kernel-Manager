@@ -20,11 +20,11 @@ android {
     buildToolsVersion '30.0.3'
 
     defaultConfig {
-        applicationId "com.smartpack.kernelmanager"
+        applicationId "com.rvkernel.manager"
         minSdkVersion 21
         targetSdkVersion 33
-        versionCode 177
-        versionName "v17.7"
+        versionCode 10
+        versionName "v1.0"
         multiDexEnabled true
         vectorDrawables.useSupportLibrary = true
         testFunctionalTest = false
