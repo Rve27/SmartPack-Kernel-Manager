@@ -438,7 +438,12 @@ public class Misc {
     }
 
     public static String getName(int position) {
-        return Utils.upperCaseEachWord(PARAMETERS[position]).replace("/cpus", " CPU's");
+    return Utils.upperCaseEachWord(PARAMETERS[position])
+        .replace("/cpus", " CPU's")
+        .replace("/uclamp.max", " UClamp Max")
+        .replace("/uclamp.min", " UClamp Min")
+        .replace("/uclamp.boosted", " UClamp Boost")
+        .replace("/uclamp.latency_sensitive", " UClamp Latency Sensitive");
     }
 
     public static boolean exists(int position) {
