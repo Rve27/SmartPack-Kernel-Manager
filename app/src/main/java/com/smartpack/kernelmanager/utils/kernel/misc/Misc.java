@@ -74,8 +74,13 @@ public class Misc {
     private static final String HAPTICS_CALL = HAPTICS + "/vmax_mv_call";
 
     private static final String CPUSET = "/dev/cpuset";
-    private static final String[] PARAMETERS = {"audio-app/cpus", "background/cpus", "camera-daemon/cpus",
-            "foreground/cpus", "restricted/cpus", "system-background/cpus", "top-app/cpus"};
+    private static final String[] PARAMETERS = {"audio-app/cpus", "audio-app/uclamp.max", "audio-app/uclamp.min","audio-app/uclamp.boosted", "audio-app/uclamp.latency_sensitive",
+            "background/cpus", "background/uclamp.max", "background/uclamp.min", "background/uclamp.boosted", "background/uclamp.latency_sensitive",
+            "camera-daemon/cpus", "camera-daemon/uclamp.max", "camera-daemon/uclamp.min", "camera-daemon/uclamp.boosted", "camera-daemon/uclamp.latency_sensitive",
+            "foreground/cpus", "foreground/uclamp.max", "foreground/uclamp.min", "foreground/uclamp.boosted", "foreground/uclamp.latency_sensitive",
+            "restricted/cpus", "restricted/uclamp.max", "restricted/uclamp.min", "restricted/uclamp.boosted", "restricted/uclamp.latency_sensitive",
+            "system-background/cpus", "system-background/uclamp.max", "system-background/uclamp.min", "system-background/uclamp.boosted", "system-background/uclamp.latency_sensitive",
+            "top-app/cpus", "top-app/uclamp.max", "top-app/uclamp.min", "top-app/uclamp.boosted", "top-app/uclamp.latency_sensitive"};
 
     private static final String TQL_PARENT = "/sys/class/net";
 
