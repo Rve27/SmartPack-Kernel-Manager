@@ -15,6 +15,12 @@ jobs:
     steps:
       - uses: actions/checkout@v1
 
+      # Set Timezone
+      - name: Set timezone to Jakarta
+        run: |
+          sudo timedatectl set-timezone Asia/Jakarta
+          timedatectl
+
       # Set Current Date As Env Variable
       - name: Set current date as env variable
         run: echo "date_today=$(date +'%Y-%m-%d')" >> $GITHUB_ENV
